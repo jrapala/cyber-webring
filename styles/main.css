@@ -1,0 +1,57 @@
+body {
+  background-color: #ffffcc;
+  color: #000080;
+  font-family: "Comic Sans MS", "Courier New", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 2em;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+a {
+  color: #0000cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.box {
+  border: 3px double #000080;
+  background-color: #ffffff;
+  padding: 1em;
+  margin: 1em auto;
+  width: 80%;
+  max-width: 600px;
+}
+
+footer {
+  font-size: 0.8em;
+  color: #555;
+  margin-top: 3em;
+}
+
+marquee {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
