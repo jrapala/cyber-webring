@@ -42,11 +42,12 @@ This is a _one-page-per-human_ operation. Keep it focused.
 
 ## ✍️ How to Join
 
-1. **Fork this repo**
+1. **Fork this repo** (or don't)
 2. **Pick a neighborhood**
 3. **Pick a homestead** from the list of available homesteads
 4. **Update the `index.html` and/or `style.css`** (and optionally inline JS)
-5. **Submit a pull request** and you'll become part of the club
+5. **Add yourself to the Who's Here section on the main page**
+6. **Submit a pull request** and you'll become part of the club
 
 ---
 
