@@ -22,10 +22,8 @@ Each member builds a single page using the raw web:
 
 ### ✅ You *can*:
 - Use HTML, CSS, and vanilla JavaScript
-- Add one `index.html` in your own folder
 - Include small, purposeful images (profile photos, illustrations, etc.)
 - Link to external media (YouTube, Giphy, etc.)
-- Get weird, get personal, get creative
 
 ### 🚫 You *cannot*:
 - Use React, Vue, Svelte, or any framework
@@ -33,6 +31,7 @@ Each member builds a single page using the raw web:
 - Import external JS libraries or CDN scripts
 - Upload large media (audio, video, uncompressed 4K PNGs)
 - Add multiple pages, blogs, or full portfolios
+- Delete the webring navigation at the bottom of your page
 
 This is a *one-page-per-human* operation. Keep it focused.
 
@@ -41,12 +40,10 @@ This is a *one-page-per-human* operation. Keep it focused.
 ## ✍️ How to Join
 
 1. **Fork this repo**
-2. **Pick a neighborhood** from the list below, or request random assignment
-3. **Create a folder** under `neighborhoods/[name]/###/`
-4. **Add an `index.html`** (and optionally inline CSS or JS)
-5. **Update your navigation links** (`Prev | Home | Next`)
-6. **Add yourself** to `ring.json` and the homepage list
-7. **Submit a pull request** and wait for your dial-up modem to connect
+2. **Pick a neighborhood**
+3. **Pick a homestead** from the list of available homesteads
+4. **Update the `index.html` and/or `style.css`** (and optionally inline JS)
+5. **Submit a pull request** and you'll become part of the club
 
 ---
 
@@ -54,12 +51,12 @@ This is a *one-page-per-human* operation. Keep it focused.
 
 These are fun, themed-but-meaningless web spaces. Pick one that speaks to you, or flip a coin.
 
-- `orbit/` – floaty ideas, loosely connected thoughts
-- `midnight-lounge/` – late-night experiments and half-finished brilliance
-- `window-seat/` – observational, reflective, probably sketching something
-- `ctrl-room/` – toggles, switches, knobs, and terminal energy
-- `the-attic/` – dusty, personal, nostalgic
-- `404-club/` – weird pages that maybe shouldn’t exist but do
+- `404-club/` – For folks who write about code, tooling or other tech-adjacent stuff. (Or
+      don't.)
+- `cosmic-chaos/` – A place for floating ideas and ephemeral thoughts.
+- `the-crypt/` –  A place for folks who venture into the dark side of things.
+- `rainbow-piazza/` – A bright and playful space where everything sparkles and nothing is subtle.
+- `synth-bay/` – A late-night IRC lounge meets low-orbit sci-fi UI, with glow effects.
 
 Pages live at:
 ```
@@ -81,7 +78,7 @@ We’re fans of aesthetic flourishes, but let’s keep it lean:
 - Audio and video files
 - Large high-res screenshots
 - Bundles of unused assets
-- Pixel art spritesheets of your entire dev career
+- Pixel art spritesheets of your entire life story
 
 > **Tip:** Use services like [imgur.com](https://imgur.com), [Giphy](https://giphy.com), or [YouTube](https://youtube.com) if you need to host big stuff.
 
@@ -89,7 +86,7 @@ We’re fans of aesthetic flourishes, but let’s keep it lean:
 
 ## 🧪 Sample Page
 
-See one of the `001/index.html` files for a complete example.  
+See one of the `/neighborhoods/[neighborhood]/[number]/index.html` files for a complete example.  
 You are encouraged to break the mold, just not the rules.
 
 ---
@@ -98,18 +95,13 @@ You are encouraged to break the mold, just not the rules.
 
 This site is built with plain files and deployed on [Netlify](https://netlify.com).  
 Any time someone updates the repo, the site is automatically redeployed.  
-No builds. No compilers. No excuses.
+No builds. No compilers.
 
 ---
 
 ## 🛠 Want to Help Maintain the Ring?
 
 Open an issue or PR.  
+New neighborhoods, new styles, new copy and new ideas are welcome!
 No fancy stuff, please.
 
----
-
-## 🕹 Bring Back the Web
-
-You remember what the old web felt like: quirky, messy, personal, and full of raw HTML energy.  
-Let’s bring that back, one hand-coded page at a time.

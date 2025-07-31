@@ -1,0 +1,357 @@
+/* Rainbow Piazza - 90s Rainbow Road Vibes ✨ */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Press+Start+2P&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Orbitron', monospace;
+  background:
+    radial-gradient(circle at 20% 80%, #ff0080 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, #00ff80 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, #8000ff 0%, transparent 50%),
+    linear-gradient(135deg,
+      #ff006e 0%,
+      #ff4081 14%,
+      #ffb700 28%,
+      #00ff41 42%,
+      #00bcd4 57%,
+      #3f51b5 71%,
+      #9c27b0 85%,
+      #e91e63 100%
+    );
+  background-size: 100% 100%, 100% 100%, 100% 100%, 400% 400%;
+  animation: rainbow-shift 8s ease-in-out infinite;
+  min-height: 100vh;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.5);
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Animated rainbow background */
+@keyframes rainbow-shift {
+  0%, 100% { background-position: 0% 50%, 0% 50%, 0% 50%, 0% 50%; }
+  25% { background-position: 100% 50%, 20% 30%, 80% 70%, 100% 0%; }
+  50% { background-position: 200% 50%, 80% 20%, 20% 80%, 200% 50%; }
+  75% { background-position: 300% 50%, 60% 90%, 40% 10%, 300% 100%; }
+}
+
+/* Sparkle effects */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(2px 2px at 20px 30px, #fff, transparent),
+    radial-gradient(2px 2px at 40px 70px, #ff0080, transparent),
+    radial-gradient(1px 1px at 90px 40px, #00ff80, transparent),
+    radial-gradient(1px 1px at 130px 80px, #8000ff, transparent),
+    radial-gradient(2px 2px at 160px 30px, #fff, transparent);
+  background-repeat: repeat;
+  background-size: 200px 100px;
+  animation: sparkle 3s linear infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0.8; transform: translateY(0px); }
+  50% { opacity: 0.3; transform: translateY(-10px); }
+}
+
+/* Main content container */
+body > * {
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 40px 0;
+  background: linear-gradient(45deg, #ff006e, #ff4081, #ffb700, #00ff41, #00bcd4, #3f51b5, #9c27b0);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-text 3s ease-in-out infinite;
+  text-shadow: none;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+@keyframes rainbow-text {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 20px 0;
+  text-align: center;
+  font-weight: 400;
+  padding: 0 20px;
+}
+
+/* Homesteads list styling */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 0;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+li:hover {
+  transform: translateY(-5px) scale(1.05);
+  border-color: #fff;
+  box-shadow: 0 15px 40px rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+}
+
+li a {
+  display: block;
+  padding: 20px 15px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border-radius: 13px;
+}
+
+li a:hover {
+  background: linear-gradient(45deg, #ff006e, #ff4081, #ffb700, #00ff41);
+  background-size: 300% 300%;
+  animation: rainbow-hover 1s ease infinite;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+@keyframes rainbow-hover {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Back link styling */
+body > p:last-child {
+  text-align: center;
+  margin-top: 40px;
+}
+
+body > p:last-child a {
+  display: inline-block;
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #8000ff, #ff0080);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+body > p:last-child a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(255, 255, 255, 0.2);
+  background: linear-gradient(45deg, #ff0080, #8000ff);
+  border-color: #fff;
+}
+
+/* Rainbow road stripes effect */
+body::after {
+  content: '';
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(90deg,
+    #ff006e 0%,
+    #ff4081 14%,
+    #ffb700 28%,
+    #00ff41 42%,
+    #00bcd4 57%,
+    #3f51b5 71%,
+    #9c27b0 85%,
+    #e91e63 100%
+  );
+  background-size: 200% 100%;
+  animation: road-stripe 2s linear infinite;
+  z-index: 0;
+}
+
+@keyframes road-stripe {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  ul {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+
+  body {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* Extra sparkle for fun */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(180deg); }
+}
+
+/* Add some geometric floating elements */
+body {
+  position: relative;
+}
+
+/* Cute floating shapes */
+.floating-shape {
+  position: fixed;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* We'll add these via CSS pseudo-elements for fun geometric shapes */
+li:nth-child(odd)::before {
+  content: '★';
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  color: #ffb700;
+  font-size: 1.2rem;
+  animation: float 4s ease-in-out infinite;
+  text-shadow: 0 0 10px rgba(255, 183, 0, 0.8);
+}
+
+li:nth-child(even)::before {
+  content: '◆';
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  color: #00ff80;
+  font-size: 1rem;
+  animation: float 3s ease-in-out infinite reverse;
+  text-shadow: 0 0 10px rgba(0, 255, 128, 0.8);
+}
+
+/* Accessibility: Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  /* Disable all animations and transitions */
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Static background instead of animated */
+  body {
+    background: linear-gradient(135deg,
+      #ff006e 0%,
+      #ff4081 14%,
+      #ffb700 28%,
+      #00ff41 42%,
+      #00bcd4 57%,
+      #3f51b5 71%,
+      #9c27b0 85%,
+      #e91e63 100%
+    );
+    animation: none;
+  }
+
+  /* Remove sparkle effects */
+  body::before {
+    display: none;
+  }
+
+  /* Static rainbow text */
+  h1 {
+    background: linear-gradient(45deg, #ff006e, #ff4081, #ffb700, #00ff41, #00bcd4, #3f51b5, #9c27b0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: none;
+  }
+
+  /* Static hover effects */
+  li a:hover {
+    background: linear-gradient(45deg, #ff006e, #ff4081, #ffb700, #00ff41);
+    animation: none;
+  }
+
+  /* Remove floating shapes animation */
+  li:nth-child(odd)::before,
+  li:nth-child(even)::before {
+    animation: none;
+  }
+
+  /* Static rainbow road stripe */
+  body::after {
+    background: linear-gradient(90deg,
+      #ff006e 0%,
+      #ff4081 14%,
+      #ffb700 28%,
+      #00ff41 42%,
+      #00bcd4 57%,
+      #3f51b5 71%,
+      #9c27b0 85%,
+      #e91e63 100%
+    );
+    animation: none;
+  }
+
+  /* Keep hover interactions but make them instant */
+  li:hover {
+    transform: translateY(-5px) scale(1.05);
+    transition: none;
+  }
+
+  body > p:last-child a:hover {
+    transform: translateY(-3px);
+    transition: none;
+  }
+}

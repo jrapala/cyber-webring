@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+body {
+  background: linear-gradient(45deg, #000000, #1a0d1a, #000000);
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+  color: #00ff41;
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  text-align: center;
+  margin: 0;
+  padding: 2em;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes pulse {
+  0% { text-shadow: 0 0 5px #00ff41, 0 0 10px #00ff41, 0 0 15px #00ff41; }
+  50% { text-shadow: 0 0 10px #00ff41, 0 0 20px #00ff41, 0 0 30px #00ff41; }
+  100% { text-shadow: 0 0 5px #00ff41, 0 0 10px #00ff41, 0 0 15px #00ff41; }
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  color: #ff0040;
+  text-shadow:
+    0 0 5px #ff0040,
+    0 0 10px #ff0040,
+    0 0 15px #ff0040,
+    0 0 20px #ff0040;
+  animation: pulse 2s ease-in-out infinite;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.1em;
+  text-shadow: 0 0 3px #00ff41;
+  margin: 1em 0;
+  animation: flicker 3s ease-in-out infinite;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  border: 2px solid #00ff41;
+  background: rgba(0, 255, 65, 0.05);
+  margin: 2em auto;
+  max-width: 500px;
+  box-shadow:
+    0 0 10px #00ff41,
+    inset 0 0 10px rgba(0, 255, 65, 0.1);
+}
+
+li {
+  margin: 0;
+  padding: 0.8em;
+  border-bottom: 1px solid rgba(0, 255, 65, 0.3);
+  transition: all 0.3s ease;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li:hover {
+  background: rgba(0, 255, 65, 0.1);
+  box-shadow: inset 0 0 10px rgba(0, 255, 65, 0.2);
+}
+
+a {
+  color: #00ff41;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0 0 3px #00ff41;
+  transition: all 0.3s ease;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+a:hover {
+  color: #ff0040;
+  text-shadow:
+    0 0 5px #ff0040,
+    0 0 10px #ff0040,
+    0 0 15px #ff0040;
+  text-decoration: none;
+}
+
+.box {
+  border: 3px ridge #00ff41;
+  background: linear-gradient(135deg, rgba(0, 255, 65, 0.1), rgba(255, 0, 64, 0.05));
+  padding: 2em;
+  margin: 2em auto;
+  width: 80%;
+  max-width: 700px;
+  box-shadow:
+    0 0 20px rgba(0, 255, 65, 0.3),
+    inset 0 0 20px rgba(0, 255, 65, 0.1);
+}
+
+footer {
+  font-size: 0.9em;
+  color: #00ff41;
+  margin-top: 3em;
+  text-shadow: 0 0 3px #00ff41;
+}
+
+marquee {
+  color: #ff0040;
+  font-weight: bold;
+  margin-bottom: 1em;
+  text-shadow: 0 0 5px #ff0040;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Extra spooky 90s effects */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 255, 65, 0.03) 2px,
+      rgba(0, 255, 65, 0.03) 4px
+    );
+  pointer-events: none;
+  z-index: -1;
+}

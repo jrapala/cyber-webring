@@ -1,10 +1,12 @@
 body {
-  background-color: #ffffcc;
-  color: #000080;
+  background-color: white;
+  color: #333;
   font-family: "Comic Sans MS", "Courier New", sans-serif;
   text-align: center;
-  margin: 0;
+  margin: 100px;
   padding: 2em;
+  border: 1px double black;
+  border-width: thick;
 }
 
 h1 {
