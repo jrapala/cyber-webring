@@ -1,5 +1,6 @@
-
 # 🌐 Cyber Webring
+
+✨ ✨ ✨ https://cyber-webring.netlify.app/ ✨ ✨ ✨
 
 Welcome to the Cyber Webring — a decentralized directory of hand-built web pages, crafted by people who like making things the old-fashioned way.
 
@@ -20,12 +21,14 @@ Each member builds a single page using the raw web:
 
 ## ✋ Rules of the Ring
 
-### ✅ You *can*:
+### ✅ You _can_:
+
 - Use HTML, CSS, and vanilla JavaScript
 - Include small, purposeful images (profile photos, illustrations, etc.)
 - Link to external media (YouTube, Giphy, etc.)
 
-### 🚫 You *cannot*:
+### 🚫 You _cannot_:
+
 - Use React, Vue, Svelte, or any framework
 - Use npm, pnpm, Yarn, or any build system
 - Import external JS libraries or CDN scripts
@@ -33,7 +36,7 @@ Each member builds a single page using the raw web:
 - Add multiple pages, blogs, or full portfolios
 - Delete the webring navigation at the bottom of your page
 
-This is a *one-page-per-human* operation. Keep it focused.
+This is a _one-page-per-human_ operation. Keep it focused.
 
 ---
 
@@ -52,13 +55,14 @@ This is a *one-page-per-human* operation. Keep it focused.
 These are fun, themed-but-meaningless web spaces. Pick one that speaks to you, or flip a coin.
 
 - `404-club/` – For folks who write about code, tooling or other tech-adjacent stuff. (Or
-      don't.)
+  don't.)
 - `cosmic-chaos/` – A place for floating ideas and ephemeral thoughts.
-- `the-crypt/` –  A place for folks who venture into the dark side of things.
+- `the-crypt/` – A place for folks who venture into the dark side of things.
 - `rainbow-piazza/` – A bright and playful space where everything sparkles and nothing is subtle.
 - `synth-bay/` – A late-night IRC lounge meets low-orbit sci-fi UI, with glow effects.
 
 Pages live at:
+
 ```
 neighborhoods/[place]/[number]/
 ```
@@ -70,11 +74,13 @@ neighborhoods/[place]/[number]/
 We’re fans of aesthetic flourishes, but let’s keep it lean:
 
 ### ✅ Allowed:
+
 - A small image or two (under 500 KB, please)
 - SVGs, emoji, ASCII art, or CSS-only chaos
 - Embedded media from elsewhere
 
 ### 🚫 Not Allowed:
+
 - Audio and video files
 - Large high-res screenshots
 - Bundles of unused assets
@@ -104,4 +110,3 @@ No builds. No compilers.
 Open an issue or PR.  
 New neighborhoods, new styles, new copy and new ideas are welcome!
 No fancy stuff, please.
-
